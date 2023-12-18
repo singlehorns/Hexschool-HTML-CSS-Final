@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>使用 HTML、CSS 開發一個網站</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name='description' content='【最終試煉】使用 HTML、CSS 開發一個網站' />
+
+
+    <meta property="og:title" content="【最終試煉】使用 HTML、CSS 開發一個網站" />
+    <meta property="og:description" content="讓初學者做練習的切版網站">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/MoziDozenStudio?locale=zh_TW" />
+    <meta property="og:image"
+        content="https://scontent.fkhh1-1.fna.fbcdn.net/v/t39.30808-6/305630118_611717593666138_8929245960810720623_n.jpg?stp=dst-jpg_p235x350&_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=tt0aQVEC-ikAX-JE0J8&_nc_ht=scontent.fkhh1-1.fna&oh=00_AfA09cHuA_Uiml1RIKzUjf8z9sNVNR6E785BUm9RWjzJpg&oe=65842433" />
+
+    <link
+        href="https://scontent.fkhh1-1.fna.fbcdn.net/v/t45.5328-4/392638972_6807036946031772_1459252687448625116_n.jpg?stp=c0.0.90.90a_dst-jpg_p118x90&_nc_cat=102&ccb=1-7&_nc_sid=247b10&_nc_ohc=s895xqu8PasAX-p4e1O&_nc_ht=scontent.fkhh1-1.fna&oh=00_AfCs8L9xGgG5dn_yXdL9X5g8LoJREmHVwz2oJa2EcPfWKw&oe=65833676"
+        rel="apple-touch-icon" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <div class="share-icon-bar container">
+                <ul>
+                    <li><img src="images/facebook_icon.png"><a href="#" class="fb">粉絲團</a></li>
+                    <li><img src="images/twitter_icon.png"><a href="#" class="twitter">追隨我們</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+
+            <div class="navbar-content container">
+                <!--無障礙-->
+                <h1><a href="#"><img src="images/hexschool-logo.png" alt="六角學院LOGO"></a></h1>
+                <ul>
+                    <li><a href="">首頁</a></li>
+                    <li><a href="">產品介紹</a></li>
+                    <li><a href="">聯絡我們</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner_title">
+                <div class="title container">
+                    <p>六角學院</p>
+                    <p>讓您奠定良好的前端基礎</p>
+                </div>
+            </div>
+        </div>
+        <div class="content container">
+            <ul class="card-list">
+                <li class="card">
+                    <img src="images/html_icon.png">
+                    <h3>Html 5基礎教學</h3>
+                    <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                </li>
+                <li class="card">
+                    <img src="images/rwd_icon.png">
+                    <h3>響應式網站設計</h3>
+                    <p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+                    </p>
+                </li>
+                <li class="card">
+                    <img src="images/jquery_icon.png">
+                    <h3>JQuery 實戰教學</h3>
+                    <p>本課程有以下特色：</p>
+                    <ul>
+                        <li>．瞭解變數的使用方法</li>
+                        <li>．學習並操作DOM</li>
+                        <li>．學習基本數學運算方法</li>
+                        <li>．套件的操作及運用</li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="class-column">
+                <h2>線上課程及實體課程的差異</h2>
+
+                <table>
+                    <tbody>
+                        <!--使用th可以當表頭 會比td較粗-->
+                        <tr class="t">
+                            <th>項目</th>
+                            <th>Hex School 線上課程</th>
+                            <th>一般線上課程</th>
+                            <th>實體課程</th>
+                        </tr>
+                        <tr>
+                            <td>費用</td>
+                            <td class="highlight">較低</td>
+                            <td class="highlight">較低</td>
+                            <td>較高</td>
+                        </tr>
+                        <tr>
+                            <td>學習效果</td>
+                            <td>一般</td>
+                            <td class="highlight">較低</td>
+                            <td class="highlight">很好</td>
+                        </tr>
+                        <tr>
+                            <td>Code review</td>
+                            <td class="highlight">有</td>
+                            <td>無</td>
+                            <td>不一定</td>
+                        </tr>
+                        <tr>
+                            <td>課程更新速度</td>
+                            <td class="highlight">普通</td>
+                            <td class="highlight">普通</td>
+                            <td>較慢</td>
+                        </tr>
+                        <tr>
+                            <td>多次複習</td>
+                            <td class="highlight">可</td>
+                            <td>可</td>
+                            <td>不可</td>
+                        </tr>
+                        <tr>
+                            <td>字幕</td>
+                            <td class="highlight">有</td>
+                            <td>不一定</td>
+                            <td>板書</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="Message">
+            <div class="container">
+                <h2>對我們課程有興趣嗎？<br>
+                    歡迎留下您的資料</h2>
+                <div class="Message-board">
+                    <form>
+
+
+
+                        <div class="form-info">
+                            <label for="name">姓名</label>
+                            <input id="name" type="text" placeholder="六角講師" required="">
+                        </div>
+                        <div class="form-info">
+                            <label for="phone">電話</label>
+                            <input id="phone" type="tel" placeholder="0987654321" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                                required="">
+                        </div>
+                        <div class="form-info">
+                            <label for="email">信箱</label>
+                            <input id="email" type="email" placeholder="example@hexschool.com" required="">
+                        </div>
+
+
+
+                    </form>
+                    <div class="textarea">
+                        <p for="email">備註</p>
+                        <textarea name="message" id="message" placeholder=""></textarea>
+                    </div>
+
+                </div>
+                <button type="submit"><a href="#">送出</a></button>
+            </div>
+        </div>
+
+    <div class="footer container">
+       <a href="#"> <img src="images/hexschool-logo.png" alt=""></a>
+        <div class="info">
+            <p>聯絡我們：<a href="#">service@hexschool.com</a></p>
+            <p>電話：<a href="#">0987654321</a></p>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+    margin : 0 ; padding : 0 ; } li { list-style :none; } img { vertical-align :top; border :none;
+}
+
+body{
+
+    font-family:'microsoft jhenghei';
+
+}
+
+.wrap{
+    width:100%;
+    margin:0 auto;
+}
+
+.container{
+    width:1110px;
+}
+
+.header{
+background:#F6F6F8;
+
+}
+
+
+.share-icon-bar{
+   
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-end;
+padding:4px 0;
+}
+
+.share-icon-bar img{
+    margin: 4px 5px;
+    width: 16px;
+
+}
+
+
+.share-icon-bar ul{
+    display:flex;
+    position: relative;
+}
+
+.share-icon-bar ul li{
+    padding:4px 12px;
+
+}
+
+
+
+.share-icon-bar ul li:last-child:before{
+    content: "";
+    width: 0;
+    height: 12px;
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    position: absolute;
+    left: 47%;
+    top: 30%;
+
+
+}
+
+.share-icon-bar ul li a{
+
+    font-weight:400;
+    font-size:16px;
+    line-height:24px;
+}
+
+.share-icon-bar ul li a:hover{
+    font-weight: bold;
+
+}
+
+
+
+.fb{
+    color:#4267B2;
+}
+
+.twitter{
+    color:#1DA1F2;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+/*navbar*/
+
+
+.navbar-content{
+    
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+}
+
+
+
+.navbar-content h1{
+    margin-top: 3px!important;
+}
+
+.navbar-content ul{
+    display: flex;
+align-items: center;
+
+}
+
+.navbar-content ul li{
+margin:18px 21px;
+position: relative;
+}
+
+
+
+/*hover效果*/
+.navbar-content ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    transition: all 0.2s;
+    border-bottom: 5px solid #00cc99;
+    width: 0%;
+
+}
+
+.navbar-content ul li:hover:after{
+
+    width:100%; 
+    
+    }
+    
+
+
+.navbar-content ul li a{
+
+    font-weight:700;
+    font-size:16px;
+    line-height:24px;
+color:#00251A;
+}
+
+
+/*banner*/
+
+.banner{
+    background:url(../images/header_background.png) no-repeat;
+    background-size:cover;
+    width:100%;
+    height:390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_title{
+    width: 100%;
+    background-color: #FFFFFF26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+.title{
+
+    padding:26.5px 0px;
+    margin-left:94px;
+}
+
+
+.title p{
+    font-size:36px;
+    line-height:43.2px;
+    color:#1E1E1E;
+    font-weight:700;
+}
+
+
+/*content*/
+
+.content{
+    margin:0 auto;
+    margin-top:40px;
+}
+
+.card-list{
+    display:flex;
+    justify-content: space-between;
+margin-bottom:60px;
+}
+
+.card{
+    width:350px;
+    padding:20px;
+   
+    box-shadow: 0px 2px 4px #00000029;
+}
+
+
+/*使用object-fit可以把圖片整個放在框框裡面*/
+.card img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h3{
+    text-align:center;
+    font-weight: 700;
+    font-size:20px;
+    line-height: 24px;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:24px;
+    font-weight:400;
+    font-size:16px;
+}
+
+
+.class-column{
+    width:920px;
+    margin:0 auto;
+    margin-bottom:60px;
+}
+
+
+
+/*相鄰單元格可以合併邊框*/
+.class-column table{
+    width:100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.class-column h2{
+    text-align:center;
+    font-weight: 700;
+    font-size:24px;
+    line-height: 28.8px;
+ margin-bottom:24px;
+}
+
+
+.class-column th{
+    font-weight: bold;
+    text-align: left;
+    padding:10px 20px;
+}
+
+.class-column tbody td{
+
+    padding:10px 20px;
+}
+
+
+
+
+.class-column tr{
+    border-top: 1.5px solid #dddddd;
+    border-bottom: 1.5px solid #dddddd;
+}
+
+.highlight{
+    color:#00CC99;
+    font-weight: 700;
+}
+
+
+/*針對after要在附著的層級上加relative*/
+.class-column table tbody tr{
+
+    position: relative;
+      
+   
+   }
+   
+
+.class-column table tbody tr::after{
+    transition: all 0.8s;
+    background: #8db7b540;
+    content: '';
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    position: absolute;
+    display: block;
+}
+
+
+.class-column table tbody tr:hover:after{
+width: 100%;
+}
+    
+
+
+
+/*Message*/
+
+.Message{
+    background: linear-gradient(#E4FFF8
+    100%, #A2DDCE);
+    display:flex;
+    justify-content:center;
+}
+
+.Message-board{
+    display: flex;
+    justify-content: center;
+    margin-bottom:32px;
+}
+
+
+.Message h2{
+    text-align:center;
+    padding:36px 0;
+}
+
+.form-info{
+    display:flex;
+    flex-direction: column;
+}
+
+.Message-board form{
+    width:351px;
+    margin-right: 30px;
+}
+
+.Message-board label,.textarea p{
+    margin-bottom:8px;
+    color:#00251A;
+}
+
+.Message-board input{
+    padding:9.5px 10px;
+    border:1px solid #AAA;
+    color:#999;
+    margin-bottom:16px;
+    border-radius:3px;
+}
+
+.Message-board .form-info:last-child input{
+
+    margin-bottom:0px;
+}
+
+
+.Message-board textarea{
+    width:351px;
+    border:1px solid #AAA;
+    border-radius: 3px;
+
+    height: 200px;
+}
+
+.Message button{
+display:block;
+margin: 0 auto;
+
+/* padding:9.5px 63.5px; */
+border:1px solid #00251A;
+background-color: #00251A;
+
+border-radius:3px;
+margin-bottom:36px;
+
+} 
+.Message button a{
+    color:#fff;
+    display:block;
+    padding:9.5px 63.5px;
+    width: 100%;
+}
+
+.Message button a:hover{
+    background-color: #0b5841;
+}
+
+
+
+
+/*footer*/
+
+
+.footer{
+    padding:22px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.info a{
+    color:#00CC99;
+}
+
+
+.info a:hover{
+    color:#018f6c;
+}
